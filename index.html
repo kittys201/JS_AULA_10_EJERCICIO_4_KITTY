@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISTEMA REGISTRO DE MEJORES CALIFICACIONES 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <h1>REGISTRO DE MEJORES CALIFICACIONES Y ALUMNOS PREMIADOS DEL 2021</h1>
+    <h2>PREMIACIONES A GANADORES</h2>
+       <section id="Banner">
+        <p>ESCRIBA DATOS DEL ALUMNO </p>
+        <img id="gif_GANADOR" src="image/GANADOR.gif" alt="GIF DE GANADOR">
+        <img src="image/BANNER DE GANADOR.webp" alt="BANNER DE GANADOR">
+    </section>
+    </header>
+    <h3>Para registrar su alumno , por favor llenar  el siguiente  formulario:</h3>
+
+    <form onsubmit="registrar_Calificacion()" id="Formulario_1">
+        <div>
+        <label>
+            Nombre del Alumno:
+            <input type="text" id="Nombre" placeholder="Pedro Galves." required> 
+        </label>
+        <label>
+            País de Origen:
+            <input type="text" id="Origen" placeholder="Brasil" required> 
+        </label>
+        <label>
+            Calificacion del Alumno:
+            <input type="text" id="Calificacion" placeholder="escriba la Calificacion del Alumno" required> 
+        </label>
+        </div>
+        <div>
+            <button type="submit" id="Boton_agregar_Calificacion">Inscribir</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+
+    <h3>Las personas inscritas hasta este momento son:</h3>
+
+    <ul id="Lista_de_participantes">
+        
+    </ul>
+    
+    <div id="info">
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
